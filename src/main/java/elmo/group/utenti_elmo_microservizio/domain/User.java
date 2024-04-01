@@ -13,9 +13,16 @@ import java.util.GregorianCalendar;
 @Entity
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
+@NoArgsConstructor(force = true)
 public class User {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    public User(String username, String password, String email, GregorianCalendar dateOfBirth) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String username, password, email;
     private GregorianCalendar dateOfBirth;
