@@ -23,7 +23,7 @@ import java.util.stream.Collectors;
 @Configuration
 public class SecurityConfig {
     String[] WHITE_LIST = {
-            "/v3/api-docs/**",//chiamata internamente da keycloack per richiamare la api
+            "/orders/v3/api-docs/**",//chiamata internamente da keycloack per richiamare la api
             "/swagger-ui/**",//chiamata per il frontend di keycloack
     };
 

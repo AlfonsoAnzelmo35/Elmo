@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping("/api/orders")
 public interface OrderAPI {
     @GetMapping
     public List<Order> findAll();
