@@ -35,6 +35,13 @@
             <version>4.1.1</version>
         </dependency>
 
+        <!--abilita la security di spring-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>3.2.4</version>
+        </dependency>
+
     </dependencies>
 
     <build>
