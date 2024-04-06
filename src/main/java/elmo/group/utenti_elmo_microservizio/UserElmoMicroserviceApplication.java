@@ -16,10 +16,10 @@ public class UserElmoMicroserviceApplication {
 		SpringApplication.run(UserElmoMicroserviceApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	public CommandLineRunner commandLineRunner(UserService userService){
 		return args -> {
 			userService.save(new User("Aniello", "Aniello", "nello1965@gmail.com", new GregorianCalendar()));
 		};
-	}
+	}*/
 }

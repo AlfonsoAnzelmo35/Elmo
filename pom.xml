@@ -64,6 +64,20 @@
 			<artifactId>spring-boot-starter-security</artifactId>
 			<version>3.2.4</version>
 		</dependency>
+		<!--swagger-ui /swagger-ui/index.html-->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+
+		<!-- eureka client-->
+		<!-- per settare eureka come discovery server -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<version>4.1.1</version>
+		</dependency>
 
 		<!-- keycloack -->
 		<!--<dependency>
